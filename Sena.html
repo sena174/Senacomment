@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kotak Saran</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://i.postimg.cc/FRKBhgQM/ALYA-anime-TOKIDOKI-BOSOTTO-R-SSIA-GO-DE-DERERU-TONARI-NO-ALYA-SAN.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.1); /* semi transparan */
+      backdrop-filter: blur(10px); /* efek blur */
+      -webkit-backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      color: white;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #fff;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+    input::placeholder {
+      color: #eee;
+    }
+    button {
+      background: #28a745;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SENA</h1>
+
+    <label for="komentar">Komentar:</label>
+    <input type="text" id="komentar" placeholder="Tulis komentarmu...">
+
+    <label for="saran">Saran:</label>
+    <input type="text" id="saran" placeholder="Tulis saranmu...">
+
+    <button onclick="alert('Terima kasih atas sarannya!')">Kirim</button>
+  </div>
+</body>
+</html>
